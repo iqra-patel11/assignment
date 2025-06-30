@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Digital Business Consultant</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      line-height: 1.6;
+      color: #333;
+    }
+
+    section {
+      padding: 60px 20px;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    header {
+      background: linear-gradient(to right, #004e92, #000428);
+      color: white;
+      text-align: center;
+      padding: 100px 20px;
+      overflow: hidden;
+    }
+
+    header h1, header p, .btn {
+      animation: floatFade 2s ease-in-out forwards;
+    }
+
+    header h1 {
+      font-size: 3rem;
+      margin: 0;
+      animation-delay: 0.3s;
+    }
+
+    header p {
+      font-size: 1.2rem;
+      margin: 10px 0 30px;
+      animation-delay: 0.6s;
+    }
+
+    .btn {
+      background: #ff6b6b;
+      color: white;
+      padding: 12px 24px;
+      text-decoration: none;
+      border-radius: 4px;
+      font-weight: bold;
+      display: inline-block;
+      animation-delay: 1s;
+    }
+
+    h2 {
+      text-align: center;
+      margin-bottom: 40px;
+    }
+
+    .services, .testimonials {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      justify-content: center;
+      animation: floatFade 2s ease-in-out forwards;
+    }
+
+    .service, .testimonial {
+      flex: 1 1 300px;
+      background: #f4f4f4;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.05);
+      animation: floatUp 1.2s ease both;
+    }
+
+    .testimonial {
+      animation-delay: 0.2s;
+    }
+
+    .contact-form {
+      max-width: 600px;
+      margin: auto;
+      animation: floatFade 1.5s ease-in-out both;
+    }
+
+    .contact-form input, .contact-form textarea {
+      width: 100%;
+      padding: 12px;
+      margin-bottom: 15px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+
+    .contact-form button {
+      background: #004e92;
+      color: white;
+      padding: 12px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      font-weight: bold;
+    }
+
+    footer {
+      background: #222;
+      color: #ccc;
+      text-align: center;
+      padding: 20px;
+    }
+
+    /* Animations */
+    @keyframes floatUp {
+      from {
+        opacity: 0;
+        transform: translateY(40px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    @keyframes floatFade {
+      0% {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+      100% {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    @media (max-width: 768px) {
+      header h1 {
+        font-size: 2.2rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Hero Section -->
+  <header>
+    <h1>Alex Carter</h1>
+    <p>Digital Business Consultant</p>
+    <a href="#contact" class="btn">Book a Free Consultation</a>
+  </header>
+
+  <!-- About Section -->
+  <section id="about">
+    <h2>About Me</h2>
+    <p style="text-align: center;">
+      Hi, I’m Alex – a seasoned digital business consultant with over 10 years of experience helping startups and enterprises thrive in the digital landscape. From streamlining operations to optimizing digital presence, my goal is to create tailored strategies that drive measurable results.
+    </p>
+  </section>
+
+  <!-- Services Section -->
+  <section id="services">
+    <h2>Services</h2>
+    <div class="services">
+      <div class="service" style="animation-delay: 0.2s;">
+        <h3>📈 Digital Strategy</h3>
+        <p>I build actionable roadmaps tailored to your unique business goals.</p>
+      </div>
+      <div class="service" style="animation-delay: 0.4s;">
+        <h3>💻 Website Audits</h3>
+        <p>Detailed analysis of your website’s performance, UX, and conversions.</p>
+      </div>
+      <div class="service" style="animation-delay: 0.6s;">
+        <h3>📊 Marketing Funnels</h3>
+        <p>I design effective funnels to turn visitors into paying customers.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials Section -->
+  <section id="testimonials">
+    <h2>Testimonials</h2>
+    <div class="testimonials">
+      <div class="testimonial" style="animation-delay: 0.2s;">
+        <p>"Alex transformed our digital approach. We’ve seen a 40% increase in leads within 3 months."</p>
+        <strong>— Sarah J., EcoCommerce</strong>
+      </div>
+      <div class="testimonial" style="animation-delay: 0.4s;">
+        <p>"Professional, clear, and impactful. The strategy Alex delivered was a game-changer."</p>
+        <strong>— David M., BrightSoft</strong>
+      </div>
+      <div class="testimonial" style="animation-delay: 0.6s;">
+        <p>"Working with Alex was the best decision we made for our digital growth."</p>
+        <strong>— Priya K., Nova Retail</strong>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact">
+    <h2>Contact Me</h2>
+    <form class="contact-form">
+      <input type="text" name="name" placeholder="Your Name" required />
+      <input type="email" name="email" placeholder="Your Email" required />
+      <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    &copy; 2025 Alex Carter | Digital Business Consultant
+  </footer>
+
+</body>
+</html>
